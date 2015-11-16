@@ -8,7 +8,6 @@ class CreateUsers < ActiveRecord::Migration
       t.string :password_digest
       t.string :city
       t.string  :country
-      t.string :confirm_password
 
       t.timestamps null: false
     end

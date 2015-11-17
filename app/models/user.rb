@@ -11,4 +11,6 @@ class User < ActiveRecord::Base
 
   validates :email, email_format: { message: "Isn't in Email format" }
 
+  validates :password, :length => {:within => 6..40}
+
 end

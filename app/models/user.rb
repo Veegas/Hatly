@@ -9,4 +9,6 @@ class User < ActiveRecord::Base
   has_many :posts
   has_many :wall_posts
 
+  validates :email, email_format: { message: "Isn't in Email format" }
+
 end
